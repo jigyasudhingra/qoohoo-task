@@ -9,13 +9,14 @@ const Bootcamps = () => {
 
   return (
     <div className="bootcamp">
-      <div>Bootcamps</div>
+      <div className="bootcamp-title">Bootcamps</div>
       <div
         style={{
           display: "flex",
-          gap: 10,
+          gap: 20,
           justifyContent: "center",
-          marginBottom: 20,
+          marginBottom: 30,
+          marginTop: 50,
         }}
       >
         {Object.keys(bootcampDetails).map((i) => (
