@@ -1,7 +1,8 @@
 import React from "react";
+import BLUE_TICK from "../assets/BlueTick.png";
 
 const FilledCircle = (props) => {
-  const { circleColor, width, height } = props;
+  const { circleColor, width, height, tick } = props;
   return (
     <div
       style={{
@@ -10,7 +11,17 @@ const FilledCircle = (props) => {
         width: width,
         height: height,
       }}
-    />
+    >
+      {tick && (
+        <img
+          style={{
+            marginTop: "35%",
+          }}
+          src={BLUE_TICK}
+          alt="blue-tick"
+        />
+      )}
+    </div>
   );
 };
 

@@ -77,8 +77,9 @@ const HeroContent = () => {
               circleColor="#fb9b43"
               width={84}
               height={84}
+              tick
             />
-            <img
+            {/* <img
               style={{
                 position: "absolute",
                 marginTop: -55,
@@ -87,7 +88,7 @@ const HeroContent = () => {
               }}
               src={BLUE_TICK}
               alt="blue-tick"
-            />
+            /> */}
             <h3>{i.text}</h3>
           </div>
         ))}
