@@ -66,6 +66,7 @@ const HeroContent = () => {
       <div className="three-ticks">
         {threeYellowCircles.map((i, idx) => (
           <div
+            key={i.text}
             style={{
               textAlign: "-webkit-center",
               color: "white",

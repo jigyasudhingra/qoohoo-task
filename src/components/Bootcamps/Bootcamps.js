@@ -63,11 +63,7 @@ const Bootcamps = () => {
           <button className="contained-button">
             <div>Join Now</div>
             <div>
-              <img
-                src={WHITE_RIGHT_ARROW}
-                alt="white-right-arrow"
-                width="70%"
-              />
+              <img src={WHITE_RIGHT_ARROW} alt="white-right-arrow" />
             </div>
           </button>
         </div>
