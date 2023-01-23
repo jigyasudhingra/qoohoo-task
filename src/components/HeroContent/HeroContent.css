@@ -1,0 +1,58 @@
+.hero-content {
+  background: #161e3c;
+  padding: 60px 20px;
+}
+
+.three-grey-circles {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+}
+
+.three-grey-circles > div {
+  margin-left: 20px;
+}
+
+.three-ticks {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.image {
+  border: 1px solid #ffffff;
+  border-radius: 12px;
+  width: 400px;
+  height: 280px;
+  margin-bottom: 20px;
+}
+
+.hero-main-content {
+  display: flex;
+  text-align: -webkit-right;
+}
+
+.contained-yellow-button {
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: #fb9b43;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #161e3c;
+  width: 200px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero-main-content-right {
+  color: white;
+  align-self: center;
+  text-align: left;
+  margin-left: 60px;
+  width: 400px;
+}

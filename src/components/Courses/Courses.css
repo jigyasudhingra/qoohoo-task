@@ -1,0 +1,45 @@
+.courses-main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 60px 0px;
+  gap: 36px;
+  background: #c1cfff;
+  justify-content: center;
+}
+
+.course-card {
+  padding: 16px;
+  background: #ffd7b1;
+  color: #222223;
+  font-weight: 700px;
+  border-radius: 8px;
+}
+
+.blue-contained-button {
+  align-items: center;
+  font-family: "Nunito Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  background: #161e3c;
+  border-radius: 8px;
+  display: flex;
+  gap: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  width: 100%;
+  border: none;
+  height: 48px;
+  cursor: pointer;
+}
+
+.course-title {
+  color: "#161E3C";
+  font-size: 35px;
+  font-weight: 800;
+  background: #c1cfff;
+  text-align: center;
+  padding-top: 50px;
+  letter-spacing: 1.1;
+}

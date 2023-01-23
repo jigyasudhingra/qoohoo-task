@@ -1,0 +1,13 @@
+.bootcamp {
+}
+
+.bootcamp-name {
+}
+
+.selected-bootcamp-name {
+}
+.bootcamp-detail-card {
+  display: flex;
+  background-color: #ffd7b1;
+  color: #161e3c;
+}

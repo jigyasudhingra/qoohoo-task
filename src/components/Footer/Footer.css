@@ -1,0 +1,26 @@
+.nav-items > ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-items > ul > li {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.profile-items {
+  display: flex;
+  align-items: center;
+}
+
+.logo-img {
+  margin-left: 10px;
+}
+
+.footer {
+  background: #c1cfff;
+  color: #161e3c;
+  display: flex;
+  justify-content: space-around;
+}
