@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import CORPORATE_BOOTCAMP from "../../assets/CorporateBootcamp.jpg";
+import "./Bootcamps.css";
+import WHITE_RIGHT_ARROW from "../../assets/whiteRightArrow.png";
 
 const Bootcamps = () => {
   const [bootcampName, setBootcapName] = useState("Corporate");
@@ -12,6 +14,8 @@ const Bootcamps = () => {
         style={{
           display: "flex",
           gap: 10,
+          justifyContent: "center",
+          marginBottom: 20,
         }}
       >
         {Object.keys(bootcampDetails).map((i) => (
@@ -27,11 +31,59 @@ const Bootcamps = () => {
         ))}
       </div>
       <div className="bootcamp-detail-card">
-        <div>
-          <p>{bootcampDetail.name}</p>
-          <p>{bootcampDetail.description}</p>
+        <div
+          style={{
+            width: "50%",
+            // textAlign: "",
+            justifyContent: "right",
+            marginRight: 50,
+            marginLeft: 50,
+          }}
+        >
+          <div
+            style={{
+              fontSize: 44,
+              fontWeight: 800,
+              marginBottom: 20,
+              marginTop: 20,
+            }}
+          >
+            {bootcampDetail.name}
+          </div>
+          <div
+            style={{
+              fontSize: 24,
+              fontWeight: 600,
+              marginBottom: 25,
+            }}
+          >
+            {bootcampDetail.description}
+          </div>
+          <button className="contained-button">
+            <div>Join Now</div>
+            <div>
+              <img
+                src={WHITE_RIGHT_ARROW}
+                alt="white-right-arrow"
+                width="70%"
+              />
+            </div>
+          </button>
         </div>
-        <img src={bootcampDetail.imgSrc} alt={bootcampDetail.name} />
+        <div
+          style={{
+            width: "50%",
+            textAlign: "center",
+          }}
+        >
+          <img
+            style={{
+              borderRadius: 32,
+            }}
+            src={bootcampDetail.imgSrc}
+            alt={bootcampDetail.name}
+          />
+        </div>
       </div>
     </div>
   );
@@ -39,19 +91,19 @@ const Bootcamps = () => {
 
 const bootcampDetails = {
   Corporate: {
-    name: "Amet minim mollit - Corporate ",
+    name: "Corporate minim mollit ",
     imgSrc: CORPORATE_BOOTCAMP,
     description:
       "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. ",
   },
   Groups: {
-    name: "Amet minim mollit - Groups",
+    name: "Groups minim mollit",
     imgSrc: CORPORATE_BOOTCAMP,
     description:
       "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. ",
   },
   Upcoming: {
-    name: "Amet minim mollit - Upcoming ",
+    name: "Upcoming minim mollit ",
     imgSrc: CORPORATE_BOOTCAMP,
     description:
       "Nulla Lorem mollit cupidatat irure. Laborum magna nulla duis ullamco cillum dolor. Voluptate exercitation incididunt aliquip deserunt reprehenderit elit laborum. ",
