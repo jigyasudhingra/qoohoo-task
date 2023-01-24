@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Courses.css";
 import course1 from "../../assets/course1.jpg";
 import course2 from "../../assets/course2.jpg";
@@ -6,6 +6,30 @@ import course3 from "../../assets/course3.png";
 import WHITE_RIGHT_ARROW from "../../assets/whiteRightArrow.png";
 
 const Courses = () => {
+  useEffect(() => {
+    const courseCard = document.querySelectorAll(".course-card");
+
+    const observer = new IntersectionObserver((entries) =>
+      entries.forEach(
+        (entry, idx) => {
+          setTimeout(
+            () => {
+              entry.target.classList.toggle("show", entry.isIntersecting);
+            },
+            idx === 0 ? 300 : idx * 500
+          );
+          if (entry.isIntersecting) observer.unobserve(entry.target);
+        },
+        {
+          threshold: 1,
+        }
+      )
+    );
+
+    courseCard.forEach((card) => {
+      observer.observe(card);
+    });
+  }, []);
   return (
     <>
       <div className="course-title">Checkout my courses</div>

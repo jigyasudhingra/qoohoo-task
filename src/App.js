@@ -9,7 +9,6 @@ import { useEffect } from "react";
 const App = () => {
   useEffect(() => {
     const cards = document.querySelectorAll(".three-ticks-inner");
-    const courseCard = document.querySelectorAll(".course-card");
 
     const observer = new IntersectionObserver((entries) =>
       entries.forEach(
@@ -18,14 +17,12 @@ const App = () => {
             () => {
               entry.target.classList.toggle("show", entry.isIntersecting);
             },
-            idx === 200 ? 0 : idx * 500
+            idx === 0 ? 300 : idx * 500
           );
-          if (entry.isIntersecting) {
-            observer.unobserve(entry.target);
-          }
+          if (entry.isIntersecting) observer.unobserve(entry.target);
         },
         {
-          // threshold: 1,
+          threshold: 1,
         }
       )
     );
@@ -33,11 +30,8 @@ const App = () => {
     cards.forEach((card) => {
       observer.observe(card);
     });
-
-    courseCard.forEach((card) => {
-      observer.observe(card);
-    });
   }, []);
+
   return (
     <div className="App">
       <Header />
