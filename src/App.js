@@ -13,12 +13,12 @@ const App = () => {
     const observer = new IntersectionObserver((entries) =>
       entries.forEach(
         (entry, idx) => {
-          setTimeout(
-            () => {
-              entry.target.classList.toggle("show", entry.isIntersecting);
-            },
-            idx === 0 ? 300 : idx * 500
-          );
+          // setTimeout(
+          //   () => {
+          entry.target.classList.toggle("show", entry.isIntersecting);
+          //   },
+          //   idx === 0 ? 300 : idx * 500
+          // );
           if (entry.isIntersecting) observer.unobserve(entry.target);
         },
         {
