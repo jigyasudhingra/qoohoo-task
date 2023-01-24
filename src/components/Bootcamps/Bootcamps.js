@@ -53,8 +53,9 @@ const BootcampDetailCards = ({ bootcampDetail }) => {
       <div className="bootcamp-detail-img">
         <img
           style={{
-            borderRadius: 26,
-            // width: "50%",
+            borderRadius: 12,
+            width: "80%",
+            height: "auto",
           }}
           src={bootcampDetail.imgSrc}
           alt={bootcampDetail.name}

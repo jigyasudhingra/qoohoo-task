@@ -1,11 +1,11 @@
 .courses-main {
   display: flex;
-  /* flex-direction: row;
-  align-items: center; */
+  flex-direction: row;
+  align-items: center;
   padding: 60px 0px;
   gap: 36px;
   background: #c1cfff;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .course-card {
@@ -58,5 +58,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .course-title {
+    font-size: 25px;
   }
 }
