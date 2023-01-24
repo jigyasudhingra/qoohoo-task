@@ -93,3 +93,51 @@
   font-weight: 600;
   margin-bottom: 25px;
 }
+
+.bootcamp-detail-img {
+  width: 50%;
+  text-align: center;
+}
+
+@media (max-width: 550px) {
+  .bootcamp {
+    justify-content: center;
+    padding: 30px;
+  }
+
+  .bootcamp-name {
+    padding: 10px;
+  }
+
+  .selected-bootcamp-name {
+    padding: 10px;
+  }
+  .bootcamp-detail-card {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 5px;
+  }
+  .bootcamp-details-heading {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .bootcamp-details-description {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+  }
+  .bootcamp-details {
+    width: 100%;
+    justify-content: center;
+    margin-right: 40px;
+    margin-left: 40px;
+  }
+
+  .bootcamp-detail-img {
+    width: 5%;
+    text-align: center;
+  }
+}

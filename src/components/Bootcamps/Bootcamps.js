@@ -50,15 +50,11 @@ const BootcampDetailCards = ({ bootcampDetail }) => {
           </div>
         </button>
       </div>
-      <div
-        style={{
-          width: "50%",
-          textAlign: "center",
-        }}
-      >
+      <div className="bootcamp-detail-img">
         <img
           style={{
-            borderRadius: 32,
+            borderRadius: 26,
+            // width: "50%",
           }}
           src={bootcampDetail.imgSrc}
           alt={bootcampDetail.name}
