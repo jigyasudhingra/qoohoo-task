@@ -19,7 +19,7 @@ const App = () => {
           //   },
           //   idx === 0 ? 300 : idx * 500
           // );
-          if (entry.isIntersecting) observer.unobserve(entry.target);
+          // if (entry.isIntersecting) observer.unobserve(entry.target);
         },
         {
           threshold: 1,
