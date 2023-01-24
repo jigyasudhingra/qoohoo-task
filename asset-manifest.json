@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/jigyasudhingra.github.io/qoohoo-task/static/css/main.782d6a43.css",
+    "main.js": "/jigyasudhingra.github.io/qoohoo-task/static/js/main.bf9d5d41.js",
+    "static/media/MainProfile.jpg": "/jigyasudhingra.github.io/qoohoo-task/static/media/MainProfile.bd03f171e201a0234bac.jpg",
+    "static/media/course3.png": "/jigyasudhingra.github.io/qoohoo-task/static/media/course3.87bfbc5fa9b3389d5fc5.png",
+    "static/media/course1.jpg": "/jigyasudhingra.github.io/qoohoo-task/static/media/course1.478087a6d8c3b979d4e9.jpg",
+    "static/media/course2.jpg": "/jigyasudhingra.github.io/qoohoo-task/static/media/course2.01b12b050e46c6a58a49.jpg",
+    "static/media/CorporateBootcamp.png": "/jigyasudhingra.github.io/qoohoo-task/static/media/CorporateBootcamp.1ecde7ea161f29291165.png",
+    "index.html": "/jigyasudhingra.github.io/qoohoo-task/index.html",
+    "main.782d6a43.css.map": "/jigyasudhingra.github.io/qoohoo-task/static/css/main.782d6a43.css.map",
+    "main.bf9d5d41.js.map": "/jigyasudhingra.github.io/qoohoo-task/static/js/main.bf9d5d41.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.782d6a43.css",
+    "static/js/main.bf9d5d41.js"
+  ]
+}
