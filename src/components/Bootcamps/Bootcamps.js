@@ -10,16 +10,16 @@ const Bootcamps = () => {
   return (
     <div className="bootcamp">
       <div className="bootcamp-title">Bootcamps</div>
-      <BootcampNames
+      <BootcampNameCards
         bootcampName={bootcampName}
         setBootcapName={setBootcapName}
       />
-      <BootcampDetailsCard bootcampDetail={bootcampDetail} />
+      <BootcampDetailCards bootcampDetail={bootcampDetail} />
     </div>
   );
 };
 
-const BootcampNames = ({ bootcampName, setBootcapName }) => (
+const BootcampNameCards = ({ bootcampName, setBootcapName }) => (
   <div className="bootcamp-names">
     {Object.keys(bootcampDetails).map((i) => (
       <div
@@ -35,7 +35,7 @@ const BootcampNames = ({ bootcampName, setBootcapName }) => (
   </div>
 );
 
-const BootcampDetailsCard = ({ bootcampDetail }) => {
+const BootcampDetailCards = ({ bootcampDetail }) => {
   return (
     <div className="bootcamp-detail-card">
       <div className="bootcamp-details">
