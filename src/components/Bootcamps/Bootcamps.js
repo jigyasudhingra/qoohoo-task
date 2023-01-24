@@ -10,77 +10,59 @@ const Bootcamps = () => {
   return (
     <div className="bootcamp">
       <div className="bootcamp-title">Bootcamps</div>
+      <BootcampNames
+        bootcampName={bootcampName}
+        setBootcapName={setBootcapName}
+      />
+      <BootcampDetailsCard bootcampDetail={bootcampDetail} />
+    </div>
+  );
+};
+
+const BootcampNames = ({ bootcampName, setBootcapName }) => (
+  <div className="bootcamp-names">
+    {Object.keys(bootcampDetails).map((i) => (
+      <div
+        key={i}
+        className={
+          bootcampName === i ? "selected-bootcamp-name" : "bootcamp-name"
+        }
+        onClick={() => setBootcapName(i)}
+      >
+        {i}
+      </div>
+    ))}
+  </div>
+);
+
+const BootcampDetailsCard = ({ bootcampDetail }) => {
+  return (
+    <div className="bootcamp-detail-card">
+      <div className="bootcamp-details">
+        <div className="bootcamp-details-heading">{bootcampDetail.name}</div>
+        <div className="bootcamp-details-description">
+          {bootcampDetail.description}
+        </div>
+        <button className="contained-button">
+          <div>Join Now</div>
+          <div>
+            <img src={WHITE_RIGHT_ARROW} alt="white-right-arrow" />
+          </div>
+        </button>
+      </div>
       <div
         style={{
-          display: "flex",
-          gap: 20,
-          justifyContent: "center",
-          marginBottom: 30,
-          marginTop: 50,
+          width: "50%",
+          textAlign: "center",
         }}
       >
-        {Object.keys(bootcampDetails).map((i) => (
-          <div
-            key={i}
-            className={
-              bootcampName === i ? "selected-bootcamp-name" : "bootcamp-name"
-            }
-            onClick={() => setBootcapName(i)}
-          >
-            {i}
-          </div>
-        ))}
-      </div>
-      <div className="bootcamp-detail-card">
-        <div
+        <img
           style={{
-            width: "50%",
-            // textAlign: "",
-            justifyContent: "right",
-            marginRight: 50,
-            marginLeft: 50,
+            borderRadius: 32,
           }}
-        >
-          <div
-            style={{
-              fontSize: 44,
-              fontWeight: 800,
-              marginBottom: 20,
-              marginTop: 20,
-            }}
-          >
-            {bootcampDetail.name}
-          </div>
-          <div
-            style={{
-              fontSize: 24,
-              fontWeight: 600,
-              marginBottom: 25,
-            }}
-          >
-            {bootcampDetail.description}
-          </div>
-          <button className="contained-button">
-            <div>Join Now</div>
-            <div>
-              <img src={WHITE_RIGHT_ARROW} alt="white-right-arrow" />
-            </div>
-          </button>
-        </div>
-        <div
-          style={{
-            width: "50%",
-            textAlign: "center",
-          }}
-        >
-          <img
-            style={{
-              borderRadius: 32,
-            }}
-            src={bootcampDetail.imgSrc}
-            alt={bootcampDetail.name}
-          />
-        </div>
+          src={bootcampDetail.imgSrc}
+          alt={bootcampDetail.name}
+        />
       </div>
     </div>
   );

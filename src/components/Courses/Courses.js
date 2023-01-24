@@ -13,21 +13,8 @@ const Courses = () => {
         {courseDetails.map((i) => {
           return (
             <div key={i.name} className="course-card">
-              <img
-                style={{
-                  borderRadius: 8,
-                }}
-                src={i.imgSrc}
-                alt={i.name}
-              />
-              <p
-                style={{
-                  fontWeight: 700,
-                  fontSize: 20,
-                }}
-              >
-                {i.name}
-              </p>
+              <img className="card-img" src={i.imgSrc} alt={i.name} />
+              <p className="card-heading">{i.name}</p>
               <button className="blue-contained-button">
                 Join Now
                 <img

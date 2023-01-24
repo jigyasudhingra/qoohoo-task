@@ -43,3 +43,12 @@
   padding-top: 50px;
   letter-spacing: 1.1;
 }
+
+.card-img {
+  border-radius: 8px;
+}
+
+.card-heading {
+  font-weight: 700;
+  font-size: 20px;
+}

@@ -65,3 +65,31 @@
   align-content: center;
   justify-content: center;
 }
+
+.bootcamp-names {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+  margin-top: 50px;
+}
+
+.bootcamp-details {
+  width: 50%;
+  justify-content: right;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.bootcamp-details-heading {
+  font-size: 44px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.bootcamp-details-description {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
