@@ -21,6 +21,9 @@ const Courses = () => {
                   src={WHITE_RIGHT_ARROW}
                   alt="white-right-arrow"
                   width="3%"
+                  style={{
+                    transition: `transform 1s`,
+                  }}
                 />
               </button>
             </div>

@@ -4,8 +4,40 @@ import Footer from "./components/Footer/Footer";
 import Courses from "./components/Courses/Courses";
 import Bootcamps from "./components/Bootcamps/Bootcamps";
 import HeroContent from "./components/HeroContent/HeroContent";
+import { useEffect } from "react";
 
 const App = () => {
+  useEffect(() => {
+    const cards = document.querySelectorAll(".three-ticks-inner");
+    const courseCard = document.querySelectorAll(".course-card");
+
+    const observer = new IntersectionObserver((entries) =>
+      entries.forEach(
+        (entry, idx) => {
+          setTimeout(
+            () => {
+              entry.target.classList.toggle("show", entry.isIntersecting);
+            },
+            idx === 200 ? 0 : idx * 500
+          );
+          if (entry.isIntersecting) {
+            observer.unobserve(entry.target);
+          }
+        },
+        {
+          // threshold: 1,
+        }
+      )
+    );
+
+    cards.forEach((card) => {
+      observer.observe(card);
+    });
+
+    courseCard.forEach((card) => {
+      observer.observe(card);
+    });
+  }, []);
   return (
     <div className="App">
       <Header />

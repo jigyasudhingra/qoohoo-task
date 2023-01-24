@@ -66,6 +66,10 @@
   justify-content: center;
 }
 
+.contained-button:hover img {
+  transform: translateX(50%);
+}
+
 .bootcamp-names {
   display: flex;
   gap: 20px;

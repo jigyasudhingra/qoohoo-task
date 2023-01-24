@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CORPORATE_BOOTCAMP from "../../assets/CorporateBootcamp.jpg";
+import CORPORATE_BOOTCAMP from "../../assets/CorporateBootcamp.png";
 import "./Bootcamps.css";
 import WHITE_RIGHT_ARROW from "../../assets/whiteRightArrow.png";
 
@@ -46,14 +46,19 @@ const BootcampDetailCards = ({ bootcampDetail }) => {
         <button className="contained-button">
           <div>Join Now</div>
           <div>
-            <img src={WHITE_RIGHT_ARROW} alt="white-right-arrow" />
+            <img
+              style={{
+                transition: `transform 1s`,
+              }}
+              src={WHITE_RIGHT_ARROW}
+              alt="white-right-arrow"
+            />
           </div>
         </button>
       </div>
       <div className="bootcamp-detail-img">
         <img
           style={{
-            borderRadius: 12,
             width: "80%",
             height: "auto",
           }}

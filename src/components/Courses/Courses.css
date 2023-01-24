@@ -14,6 +14,13 @@
   color: #222223;
   font-weight: 700px;
   border-radius: 8px;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.course-card.show {
+  transform: translateY(3%);
+  opacity: 1;
 }
 
 .blue-contained-button {
@@ -32,6 +39,9 @@
   border: none;
   height: 48px;
   cursor: pointer;
+}
+.blue-contained-button:hover img {
+  transform: translateX(50%);
 }
 
 .course-title {
@@ -53,7 +63,7 @@
   font-size: 20px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1050px) {
   .courses-main {
     display: flex;
     flex-direction: column;

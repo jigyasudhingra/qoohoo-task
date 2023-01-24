@@ -52,7 +52,14 @@ const MainContentHeadingSection = () => (
     </p>
     <button className="contained-yellow-button">
       <p>View all courses</p>
-      <img src={RIGHT_ARROW} alt="right-arrow" width="4%" />
+      <img
+        style={{
+          transition: `transform 1s`,
+        }}
+        src={RIGHT_ARROW}
+        alt="right-arrow"
+        width="4%"
+      />
     </button>
   </div>
 );

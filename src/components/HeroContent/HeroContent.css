@@ -49,6 +49,10 @@
   cursor: pointer;
 }
 
+.contained-yellow-button:hover img {
+  transform: translateX(50%);
+}
+
 .hero-main-content-right {
   color: white;
   align-self: center;
@@ -76,6 +80,13 @@
 .three-ticks-inner {
   text-align: -webkit-center;
   color: white;
+  opacity: 0;
+  transition: opacity 0.8s ease-in-out;
+}
+
+.three-ticks-inner.show {
+  transform: translateY(1%);
+  opacity: 1;
 }
 
 @media (max-width: 800px) {
