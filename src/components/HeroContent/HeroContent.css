@@ -56,3 +56,24 @@
   margin-left: 60px;
   width: 400px;
 }
+
+.main-content {
+  justify-content: right;
+  width: 50%;
+}
+
+.main-heading {
+  font-weight: 700;
+  margin-top: -12px;
+  font-size: 40px;
+}
+
+.highlighted-heading {
+  color: #fb9b43;
+  font-weight: 900;
+}
+
+.three-ticks-inner {
+  text-align: -webkit-center;
+  color: white;
+}
