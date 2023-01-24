@@ -99,7 +99,7 @@
   text-align: center;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .bootcamp {
     justify-content: center;
     padding: 30px;
