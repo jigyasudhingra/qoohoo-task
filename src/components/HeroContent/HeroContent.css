@@ -54,7 +54,7 @@
   align-self: center;
   text-align: left;
   margin-left: 60px;
-  width: 400px;
+  /* width: 400px; */
 }
 
 .main-content {
@@ -115,5 +115,10 @@
 
   .hero-content {
     padding: 60px 50px;
+  }
+
+  .main-heading {
+    font-weight: 700;
+    font-size: 30px;
   }
 }

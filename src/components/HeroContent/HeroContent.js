@@ -37,7 +37,8 @@ const MainContentImgSection = () => (
 const MainContentHeadingSection = () => (
   <div className="hero-main-content-right">
     <p className="main-heading">
-      <span className="highlighted-heading">Get ready</span> to grow with us ⭐️
+      <span className="highlighted-heading">Get ready</span> to grow <br /> with
+      us ⭐️
     </p>
     <p
       style={{
