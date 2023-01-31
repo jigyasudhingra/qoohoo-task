@@ -1,4 +1,4 @@
-Deployment of this project: http://bit.ly/3WxyDNV
+Deployment of this project: https://spectacular-belekoy-a0b68d.netlify.app/
 
 
 To run this app, use following steps:
